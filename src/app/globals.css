@@ -16,6 +16,41 @@
   }
 }
 
+.hero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+header {
+  background-color: #1a202c; /* Dark blue-gray background */
+}
+
+footer {
+  background-color: #2d3748; /* Darker gray background */
+  color: #a0aec0; /* Light gray text */
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
